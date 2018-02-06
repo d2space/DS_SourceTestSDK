@@ -1,0 +1,11 @@
+framework module DS_SourceTestSDK {
+  umbrella header "DS_SourceTestSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module DS_SourceTestSDK.Swift {
+    header "DS_SourceTestSDK-Swift.h"
+    requires objc
+}
