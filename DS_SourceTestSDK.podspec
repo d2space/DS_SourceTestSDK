@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "DS_SourceTestSDK"
-  s.version       = "1.0.0.5"
+  s.version       = "1.0.0.6"
   s.license       = "MIT"
   s.summary       = "静态Framework测试，包含资源文件如：storyboard、Xib、Image"
   s.homepage      = "https://github.com/d2space/DS_SourceTestSDK"
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'DS_SourceTestSDK.framework'
 
 #不确定是否这么写
-#  s.resource_bundles  = {'DS_SourceTestSDK' => ['DS_SourceTestSDK.framework/*.{jpg,png}','DS_SourceTestSDK.framework/*.{storyboard,xib}']}
+  s.resource_bundles  = {'DS_SourceTestSDK.framework' => ['DS_SourceTestSDK.framework/**/*.{lproj,jpg,png,storyboard,xib,xcassets,json,xcdatamodeld}']}
 
 #尝试
   s.resources = 'DS_SourceTestSDK.framework/**/*.{lproj,jpg,png,storyboard,xib,xcassets,json,xcdatamodeld}'
