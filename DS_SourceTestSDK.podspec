@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "DS_SourceTestSDK"
-  s.version       = "1.0.0.18"
+  s.version       = "1.0.0.19"
   s.license       = "MIT"
   s.summary       = "静态Framework测试，包含资源文件如：storyboard、Xib、Image"
   s.homepage      = "https://github.com/d2space/DS_SourceTestSDK"
@@ -13,5 +13,9 @@ Pod::Spec.new do |s|
   s.exclude_files = "Classes/Exclude"
   s.frameworks     = 'Foundation','UIKit'
   s.vendored_frameworks = 'DS_SourceTestSDK.framework'
+  s.pod_target_xcconfig = {
+    'SWIFT_VERSION' => '4.0',
+  }
+  s.xcconfig = { "OTHER_LDFLAGS" => "-lz" }
 
 end
