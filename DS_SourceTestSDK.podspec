@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "DS_SourceTestSDK"
-  s.version       = "1.0.0.25"
+  s.version       = "1.0.0.26"
   s.license       = "MIT"
   s.summary       = "静态Framework测试，包含资源文件如：storyboard、Xib、Image"
   s.homepage      = "https://github.com/d2space/DS_SourceTestSDK"
@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     'SWIFT_VERSION' => '4.0',
   }
-  s.xcconfig = {'VALID_ARCHS' =>  ['armv7', 'armv7s']}
+  #s.xcconfig = {'VALID_ARCHS' =>  ['armv7', 'armv7s']}
 
 end
