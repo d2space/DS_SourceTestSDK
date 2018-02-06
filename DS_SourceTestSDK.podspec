@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "DS_SourceTestSDK"
-  s.version       = "1.0.0.11"
+  s.version       = "1.0.0.12"
   s.license       = "MIT"
   s.summary       = "静态Framework测试，包含资源文件如：storyboard、Xib、Image"
   s.homepage      = "https://github.com/d2space/DS_SourceTestSDK"
