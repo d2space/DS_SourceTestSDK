@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "DS_SourceTestSDK"
-  s.version       = "1.0.0.26"
+  s.version       = "1.0.0.27"
   s.license       = "MIT"
   s.summary       = "静态Framework测试，包含资源文件如：storyboard、Xib、Image"
   s.homepage      = "https://github.com/d2space/DS_SourceTestSDK"
@@ -17,5 +17,10 @@ Pod::Spec.new do |s|
     'SWIFT_VERSION' => '4.0',
   }
   #s.xcconfig = {'VALID_ARCHS' =>  ['armv7', 'armv7s']}
+  s.resource_bundles = {
+  'DS_SourceTestSDK' => ['Pod/**/*.{xib, storyboard, jpg, png}']
+  }
+  s.source_files = 'Pod/Classes/.'
+
 
 end
